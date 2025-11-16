@@ -1,0 +1,6 @@
+[submodule "ad-moderation-client"]
+	path = ad-moderation-client
+	url = https://github.com/HuggySoul/ad-moderation-client.git
+[submodule "ad-moderation-server"]
+	path = ad-moderation-server
+	url = https://github.com/HuggySoul/ad-moderation-server.git

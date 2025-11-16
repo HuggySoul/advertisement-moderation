@@ -1,0 +1,18 @@
+services:
+  client:
+    container_name: "ad-moderation-client-cont"
+    image: "ad-moderation-client-img"
+    build:
+      context: ./ad-moderation-client
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./ad-moderation-client:/app # для hmr
+      - /app/node_modules # не затираем node_modules
+  server:
+    container_name: "ad-moderation-server-cont"
+    image: "ad-moderation-server-img"
+    build:
+      context: ./ad-moderation-server
+    ports:
+      - "3001:3001"
